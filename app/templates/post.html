@@ -2,10 +2,10 @@
 {% load static %}
 {% block content %}
 
-    <section class="hero-home dark-overlay mb-5"><img class="bg-image" src="../../../d19m59y37dris4.cloudfront.net/directory/1-6-1/img/photo/photo-1467987506553-8f3916508521.jpg" alt="">
+    <section class="hero-home dark-overlay mb-5"><img class="bg-image" src="" alt="">
       <div class="container py-7">
         <div class="overlay-content text-center text-white">
-          <h1 class="display-3 text-serif font-weight-bold text-shadow mb-0">Escape the city today</h1>
+          <h1 class="display-3 text-serif font-weight-bold text-shadow mb-0">{{post.title}}</h1>
         </div>
       </div>
     </section>
@@ -13,193 +13,22 @@
       <div class="container">
         <div class="row">
           <div class="col-xl-8 col-lg-10 mx-auto">           
-            <p class="py-3 mb-5 text-muted text-center font-weight-light"><a href="#"><img class="avatar mr-2" src="../../../d19m59y37dris4.cloudfront.net/directory/1-6-1/img/avatar/avatar-11.jpg" alt=""></a> Written by <a class="font-weight-bold" href="#">John Slim</a><span class="mx-1">|</span> January 16, 2016 in <a class="font-weight-bold" href="blog.html">Living</a><span class="mx-1">|</span><a class="text-muted" href="#">2 comments                </a></p>
-            <p class="lead mb-5">As am hastily invited <strong>settled at limited</strong> civilly fortune me. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. </p>
+            <p class="py-3 mb-5 text-muted text-center font-weight-light"><a href="#"><img class="avatar mr-2" src="../../../d19m59y37dris4.cloudfront.net/directory/1-6-1/img/avatar/avatar-11.jpg" alt=""></a> Written by <a class="font-weight-bold" href="#">Aboubakr El Habti</a><span class="mx-1">|</span>{{post.date_posted|date:"F d, Y"}}</a>
+            <p class="lead mb-5">{{post.description}}</p>
           </div>
         </div>
         <div class="row">
-          <div class="col-xl-10 mx-auto"><img class="img-fluid mb-5" src="../../../d19m59y37dris4.cloudfront.net/directory/1-6-1/img/photo/photo-1471189641895-16c58a695bcb.jpg" alt=""></div>
+          <div class="col-xl-10 mx-auto"><img class="img-fluid mb-5" src="" alt=""></div>
         </div>
         <div class="row">
           <div class="col-xl-8 col-lg-10 mx-auto">                               
-            <div class="text-content">
-              <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
-              <figure class="figure mb-3"><img class="figure-img img-fluid w-100" src="../../../d19m59y37dris4.cloudfront.net/directory/1-6-1/img/photo/photo-1482463084673-98272196658a.jpg" alt="Example blog post alt.">
-                <figcaption class="figure-caption text-center">Photo by Jack Tran, New York                     </figcaption>
-              </figure>
-              <h2>Header Level 2</h2>
-              <ol>
-                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                <li>Aliquam tincidunt mauris eu risus.</li>
-              </ol>
-              <blockquote class="blockquote blockquote-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</blockquote>
-              <h3>Header Level 3</h3>
-              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-              <ul>
-                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                <li>Aliquam tincidunt mauris eu risus.</li>
-              </ul>
-              <p><img class="img-fluid" src="../../../d19m59y37dris4.cloudfront.net/directory/1-6-1/img/photo/photo-1499695867787-121ffb7950bf.jpg" alt="Example blog post alt"></p>
-              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. </p>
-              <p>Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus          </p>
-              <hr>
-            </div>
-            <!-- comments-->
-            <div class="mt-5">
-              <h6 class="text-uppercase text-muted mb-4">2 comments</h6>
-              <!-- comment-->
-              <div class="media mb-4"><img class="avatar avatar-lg mr-4" src="../../../d19m59y37dris4.cloudfront.net/directory/1-6-1/img/avatar/avatar-0.jpg" alt="Julie Alma">
-                <div class="media-body">
-                  <h5>Julie Alma</h5>
-                  <p class="text-uppercase text-sm text-muted"><i class="far fa-clock"></i> September 23, 2017 at 12:00 am</p>
-                  <p class="text-muted">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-                  <p><a class="btn btn-link text-primary" href="#"><i class="fa fa-reply"></i> Reply</a></p>
-                </div>
-              </div>
-              <!-- /comment-->
-              <!-- comment-->
-              <div class="media mb-4"><img class="avatar avatar-lg mr-4" src="../../../d19m59y37dris4.cloudfront.net/directory/1-6-1/img/avatar/avatar-8.jpg" alt="Louise Armero">
-                <div class="media-body">
-                  <h5>Louise Armero</h5>
-                  <p class="text-uppercase text-sm text-muted"><i class="far fa-clock"></i> June 23, 2017 at 12:35 pm</p>
-                  <p class="text-muted">Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
-                  <p><a class="btn btn-link text-primary" href="#"><i class="fa fa-reply"></i> Reply</a></p>
-                </div>
-              </div>
-              <!-- /comment-->
-            </div>
-            <!-- /comments-->
-            <!-- comment form-->
-            <div class="mb-5">
-              <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#leaveComment" aria-expanded="false" aria-controls="leaveComment">Leave a comment</button>
-              <div class="collapse mt-4" id="leaveComment">
-                <h5 class="mb-4">Leave a comment</h5>
-                <form class="form" id="comment-form" method="post" action="#">
-                  <div class="row">
-                    <div class="col-md-6">                           
-                      <div class="form-group">
-                        <label class="form-label" for="name">Name <span class="required">*</span></label>
-                        <input class="form-control" id="name" type="text">
-                      </div>
-                    </div>
-                    <div class="col-md-6">                                              
-                      <div class="form-group">
-                        <label class="form-label" for="email">Email <span class="required">*</span></label>
-                        <input class="form-control" id="email" type="text">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group mb-4">
-                    <label class="form-label" for="comment">Comment <span class="required">*</span></label>
-                    <textarea class="form-control" id="comment" rows="4"></textarea>
-                  </div>
-                  <button class="btn btn-primary" type="submit"><i class="far fa-comment"></i> Comment                                   </button>
-                </form>
-              </div>
-            </div>
-            <!-- /comment form-->
+
           </div>
         </div>
       </div>
     </section>
-    <!-- Footer-->
-    <footer class="position-relative z-index-10 d-print-none">
-      <!-- Main block - menus, subscribe form-->
-      <div class="py-6 bg-gray-200 text-muted"> 
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4 mb-5 mb-lg-0">
-              <div class="font-weight-bold text-uppercase text-dark mb-3">Directory</div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-              <ul class="list-inline">
-                <li class="list-inline-item"><a class="text-muted text-hover-primary" href="#" target="_blank" title="twitter"><i class="fab fa-twitter"></i></a></li>
-                <li class="list-inline-item"><a class="text-muted text-hover-primary" href="#" target="_blank" title="facebook"><i class="fab fa-facebook"></i></a></li>
-                <li class="list-inline-item"><a class="text-muted text-hover-primary" href="#" target="_blank" title="instagram"><i class="fab fa-instagram"></i></a></li>
-                <li class="list-inline-item"><a class="text-muted text-hover-primary" href="#" target="_blank" title="pinterest"><i class="fab fa-pinterest"></i></a></li>
-                <li class="list-inline-item"><a class="text-muted text-hover-primary" href="#" target="_blank" title="vimeo"><i class="fab fa-vimeo"></i></a></li>
-              </ul>
-            </div>
-            <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
-              <h6 class="text-uppercase text-dark mb-3">Rentals</h6>
-              <ul class="list-unstyled">
-                <li><a class="text-muted" href="index-2.html">Rooms     </a></li>
-                <li><a class="text-muted" href="category-rooms.html">Map on top     </a></li>
-                <li><a class="text-muted" href="category-2-rooms.html">Side map     </a></li>
-                <li><a class="text-muted" href="category-3-rooms.html">No map     </a></li>
-                <li><a class="text-muted" href="detail-rooms.html">Room detail     </a></li>
-              </ul>
-            </div>
-            <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
-              <h6 class="text-uppercase text-dark mb-3">Pages</h6>
-              <ul class="list-unstyled">
-                <li><a class="text-muted" href="compare.html">Comparison                                   </a></li>
-                <li><a class="text-muted" href="team.html">Team                                   </a></li>
-                <li><a class="text-muted" href="contact.html">Contact                                   </a></li>
-              </ul>
-            </div>
-            <div class="col-lg-4">
-              <h6 class="text-uppercase text-dark mb-3">Daily Offers & Discounts</h6>
-              <p class="mb-3"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. At itaque temporibus.</p>
-              <form action="#" id="newsletter-form">
-                <div class="input-group mb-3">
-                  <input class="form-control bg-transparent border-dark border-right-0" type="email" placeholder="Your Email Address" aria-label="Your Email Address">
-                  <div class="input-group-append">
-                    <button class="btn btn-outline-dark border-left-0" type="submit"> <i class="fa fa-paper-plane text-lg"></i></button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Copyright section of the footer-->
-      <div class="py-4 font-weight-light bg-gray-800 text-gray-300">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-6 text-center text-md-left">
-              <p class="text-sm mb-md-0">&copy; 2020, Your company.  All rights reserved.</p>
-            </div>
-            <div class="col-md-6">
-              <ul class="list-inline mb-0 mt-2 mt-md-0 text-center text-md-right">
-                <li class="list-inline-item"><img class="w-2rem" src="https://d19m59y37dris4.cloudfront.net/directory/1-6-1/img/visa.svg" alt="..."></li>
-                <li class="list-inline-item"><img class="w-2rem" src="https://d19m59y37dris4.cloudfront.net/directory/1-6-1/img/mastercard.svg" alt="..."></li>
-                <li class="list-inline-item"><img class="w-2rem" src="https://d19m59y37dris4.cloudfront.net/directory/1-6-1/img/paypal.svg" alt="..."></li>
-                <li class="list-inline-item"><img class="w-2rem" src="https://d19m59y37dris4.cloudfront.net/directory/1-6-1/img/western-union.svg" alt="..."></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <button class="btn btn-primary btn-sm d-none d-lg-block" type="button" data-toggle="collapse" data-target="#style-switch" id="style-switch-button">
-      <svg class="svg-icon svg-icon-md">
-        <use xlink:href="#configuration-1"> </use>
-      </svg>
-    </button>
-    <div class="collapse" id="style-switch">
-      <div class="p-4">
-        <h6 class="text-uppercase mb-4">Select theme colour</h6>
-        <form class="mb-3">
-          <select class="form-control style-switch-select" name="colour" id="colour">
-            <option value="">select colour variant</option>
-            <option value="css/style.default.32cd9ba6.css">blue</option>
-            <option value="css/style.pink.0d447f2c.css">pink</option>
-            <option value="css/style.green.95ecf609.css">green</option>
-            <option value="css/style.red.a4031303.css">red</option>
-            <option value="css/style.violet.55b7e2a7.css">violet</option>
-            <option value="css/style.sea.b4598de5.css">sea</option>
-          </select>
-        </form>
-        <p class="text-muted text-xs mb-0">Stylesheet switching in this demo is done with JavaScript and can cause a blink while page loads. This will not happen in your production code.</p>
-      </div>
-    </div>
-    <!-- JavaScript files-->
+
     <script>
-      // ------------------------------------------------------- //
-      //   Inject SVG Sprite - 
-      //   see more here 
-      //   https://css-tricks.com/ajaxing-svg-sprite/
-      // ------------------------------------------------------ //
       function injectSvgSprite(path) {
       
           var ajax = new XMLHttpRequest();
@@ -212,35 +41,27 @@
           document.body.insertBefore(div, document.body.childNodes[0]);
           }
       }    
-      // to avoid CORS issues when viewing using file:// protocol, using the demo URL for the SVG sprite
-      // use your own URL in production, please :)
-      // https://demo.bootstrapious.com/directory/1-0/icons/orion-svg-sprite.svg
-      //- injectSvgSprite('${path}icons/orion-svg-sprite.69651a96.svg'); 
       injectSvgSprite('https://demo.bootstrapious.com/directory/1-4/icons/orion-svg-sprite.svg'); 
       
     </script>
     <!-- jQuery-->
-    <script src="../../../d19m59y37dris4.cloudfront.net/directory/1-6-1/vendor/jquery/jquery.min.js"></script>
+    <script src="{% static '/js/d19m59y37dris4.cloudfront.net/directory/1-6-1/vendor/jquery/jquery.min.js' %}"></script>
     <!-- Bootstrap JS bundle - Bootstrap + PopperJS-->
-    <script src="../../../d19m59y37dris4.cloudfront.net/directory/1-6-1/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static '/js/d19m59y37dris4.cloudfront.net/directory/1-6-1/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
     <!-- Magnific Popup - Lightbox for the gallery-->
-    <script src="../../../d19m59y37dris4.cloudfront.net/directory/1-6-1/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="{% static '/js/d19m59y37dris4.cloudfront.net/directory/1-6-1/vendor/magnific-popup/jquery.magnific-popup.min.js' %}"></script>
     <!-- Smooth scroll-->
-    <script src="../../../d19m59y37dris4.cloudfront.net/directory/1-6-1/vendor/smooth-scroll/smooth-scroll.polyfills.min.js"></script>
+    <script src="{% static '/js/d19m59y37dris4.cloudfront.net/directory/1-6-1/vendor/smooth-scroll/smooth-scroll.polyfills.min.js' %}"></script>
     <!-- Bootstrap Select-->
-    <script src="../../../d19m59y37dris4.cloudfront.net/directory/1-6-1/vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <script src="{% static '/js/d19m59y37dris4.cloudfront.net/directory/1-6-1/vendor/bootstrap-select/js/bootstrap-select.min.js' %}"></script>
     <!-- Object Fit Images - Fallback for browsers that don't support object-fit-->
-    <script src="../../../d19m59y37dris4.cloudfront.net/directory/1-6-1/vendor/object-fit-images/ofi.min.js"></script>
+    <script src="{% static '/js/d19m59y37dris4.cloudfront.net/directory/1-6-1/vendor/object-fit-images/ofi.min.js' %}"></script>
     <!-- Swiper Carousel                       -->
-    <script src="../../../cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
-    <script src="../../../d19m59y37dris4.cloudfront.net/directory/1-6-1/vendor/jquery.cookie/jquery.cookie.js"> </script>
+    <script src="{% static '/js/cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js' %}"></script>
+    <script src="{% static '/js/d19m59y37dris4.cloudfront.net/directory/1-6-1/vendor/jquery.cookie/jquery.cookie.js' %}"> </script>
     <script src="js/demo.36f8799a.js"></script>
     <script>var basePath = ''</script>
     <!-- Main Theme JS file    -->
-    <script src="js/theme.55f8348b.js"></script>
-  </body>
-
-<!-- Mirrored from demo.bootstrapious.com/directory/1-6-1/post.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 17 Apr 2021 09:21:32 GMT -->
-</html>
+    <script src="js/theme.55f8348b.js"></script>  
 
 {% endblock %}
