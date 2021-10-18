@@ -2,7 +2,7 @@
 {% load static %}
 {% block content %}
 
-    <section class="hero-home dark-overlay mb-5"><img class="bg-image" src="" alt="">
+    <section class="hero-home dark-overlay mb-5"><img class="bg-image" src="{{post.image.url}}" alt="">
       <div class="container py-7">
         <div class="overlay-content text-center text-white">
           <h1 class="display-3 text-serif font-weight-bold text-shadow mb-0">{{post.title}}</h1>
@@ -13,7 +13,7 @@
       <div class="container">
         <div class="row">
           <div class="col-xl-8 col-lg-10 mx-auto">           
-            <p class="py-3 mb-5 text-muted text-center font-weight-light"><a href="#"><img class="avatar mr-2" src="../../../d19m59y37dris4.cloudfront.net/directory/1-6-1/img/avatar/avatar-11.jpg" alt=""></a> Written by <a class="font-weight-bold" href="#">Aboubakr El Habti</a><span class="mx-1">|</span>{{post.date_posted|date:"F d, Y"}}</a>
+            <p class="py-3 mb-5 text-muted text-center font-weight-light"><a href="#"><img src="{% static 'img/me.jfif' %}" style="border-radius: 50%; width: 50px;" alt=""></a> Written by <a class="font-weight-bold" href="{% url 'about_me' %}">Aboubakr El Habti</a><span class="mx-1">|</span>{{post.date_posted|date:"F d, Y"}}</a>
             <p class="lead mb-5">{{post.description}}</p>
           </div>
         </div>
@@ -28,40 +28,5 @@
       </div>
     </section>
 
-    <script>
-      function injectSvgSprite(path) {
-      
-          var ajax = new XMLHttpRequest();
-          ajax.open("GET.html", path, true);
-          ajax.send();
-          ajax.onload = function(e) {
-          var div = document.createElement("div");
-          div.className = 'd-none';
-          div.innerHTML = ajax.responseText;
-          document.body.insertBefore(div, document.body.childNodes[0]);
-          }
-      }    
-      injectSvgSprite('https://demo.bootstrapious.com/directory/1-4/icons/orion-svg-sprite.svg'); 
-      
-    </script>
-    <!-- jQuery-->
-    <script src="{% static '/js/d19m59y37dris4.cloudfront.net/directory/1-6-1/vendor/jquery/jquery.min.js' %}"></script>
-    <!-- Bootstrap JS bundle - Bootstrap + PopperJS-->
-    <script src="{% static '/js/d19m59y37dris4.cloudfront.net/directory/1-6-1/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-    <!-- Magnific Popup - Lightbox for the gallery-->
-    <script src="{% static '/js/d19m59y37dris4.cloudfront.net/directory/1-6-1/vendor/magnific-popup/jquery.magnific-popup.min.js' %}"></script>
-    <!-- Smooth scroll-->
-    <script src="{% static '/js/d19m59y37dris4.cloudfront.net/directory/1-6-1/vendor/smooth-scroll/smooth-scroll.polyfills.min.js' %}"></script>
-    <!-- Bootstrap Select-->
-    <script src="{% static '/js/d19m59y37dris4.cloudfront.net/directory/1-6-1/vendor/bootstrap-select/js/bootstrap-select.min.js' %}"></script>
-    <!-- Object Fit Images - Fallback for browsers that don't support object-fit-->
-    <script src="{% static '/js/d19m59y37dris4.cloudfront.net/directory/1-6-1/vendor/object-fit-images/ofi.min.js' %}"></script>
-    <!-- Swiper Carousel                       -->
-    <script src="{% static '/js/cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js' %}"></script>
-    <script src="{% static '/js/d19m59y37dris4.cloudfront.net/directory/1-6-1/vendor/jquery.cookie/jquery.cookie.js' %}"> </script>
-    <script src="js/demo.36f8799a.js"></script>
-    <script>var basePath = ''</script>
-    <!-- Main Theme JS file    -->
-    <script src="js/theme.55f8348b.js"></script>  
 
 {% endblock %}
